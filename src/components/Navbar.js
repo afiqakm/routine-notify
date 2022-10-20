@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import logo from '../images/routify.png'
 
@@ -6,8 +7,8 @@ export default function Navbar() {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start flex">
-                <img className='w-10' src={logo} alt='routify logo' />
-                <a className="btn btn-ghost normal-case text-xl">Routify</a>
+                <img className='w-12' src={logo} alt='routify logo' />
+                <a className="btn btn-ghost hidden normal-case text-xl lg:flex">Routify</a>
             </div>
             <div className='navbar-center'>
                 <label htmlFor="my-modal-6" className="btn btn-primary modal-button">Add Routine</label>
@@ -24,7 +25,7 @@ export default function Navbar() {
                     <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         <li><a>Profile</a></li>
                         <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><a href="/">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +62,8 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className="modal-action">
-                            <label htmlFor="my-modal-6" className="btn">Yay!</label>
+                            <button className='btn btn-primary'>Add!</button>
+                            <label htmlFor="my-modal-6" className="btn btn-secondary">Close</label>
                         </div>
                     </form>
                 </div>

@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}",'./node_modules/tw-elements/dist/js/**/*.js'],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui",'tw-elements/dist/plugin')],
+  daisyui: {
+    themes: [
+      {
+        cupcake: {
+          ...require("daisyui/src/colors/themes")["[data-theme=cupcake]"],
+          primary: "#FEC007",
+          "primary-focus": "#F4B701",
+          secondary: "#E16036",
+          "secondary-focus" : "#D54D20",
+        },
+      },
+    ],
+  },
+  plugins: [require("daisyui")],
 }
