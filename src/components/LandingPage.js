@@ -2,6 +2,10 @@
 import React from 'react'
 import logo from '../images/routify.png'
 
+function notificationOpen(){
+
+}
+
 export default function LandingPage() {
     return (
         <div>
@@ -26,7 +30,7 @@ export default function LandingPage() {
                 <div className="hero-content text-center flex flex-wrap flex-auto px-0">
                     <div className="max-w-md">
                         <h1 className="text-5xl font-bold py-10">Always forgot to do your routine?</h1>
-                        <p className="py-6">Routify can help remind your routine through notification! </p>
+                        <p className="p-6">We all have our moment where we forgot to do our daily or even weekly routine. Routify can help remind your routine through notification! </p>
                         <a className="btn btn-primary" href="/Signup">Get Started</a>
                     </div>
 
@@ -38,7 +42,7 @@ export default function LandingPage() {
                             <div className="display">
                                 <div className="artboard artboard-demo phone-1 flex-col gap-5">
                                     <img className='w-20 py-5' src={logo} alt='routify logo' />
-                                    <div>
+                                    <div className=''>
                                         <div className="flex flex-row alert shadow-lg ">
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info flex-shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -48,7 +52,7 @@ export default function LandingPage() {
                                                 </div>
                                             </div>
                                             <div className="flex-none">
-                                                <button className=" btn btn-primary btn-sm">open</button>
+                                                <button onClick="" className=" btn btn-primary btn-sm">open</button>
                                             </div>
                                         </div>
                                     </div>

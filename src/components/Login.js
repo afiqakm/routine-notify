@@ -12,7 +12,7 @@ function Login() {
                 <div className="alert alert-error shadow-lg">
                     <div>
                     <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <span>Just put whatever email and password. <br/> This is error placeholder.</span>
+                        <span>This is error placeholder.</span>
                     </div>
                 </div>
             </div>
@@ -22,13 +22,13 @@ function Login() {
                     <label className="label">
                         <span className="label-text">Email</span>
                     </label>
-                    <input type="email" placeholder="name@test.com" className="input input-bordered w-full max-w-sm" required />
+                    <input type="email" placeholder="name@test.com" className="input input-bordered w-full max-w-sm"/>
                 </div>
                 <div className="form-control w-full max-w-sm">
                     <label className="label">
                         <span className="label-text">Password</span>
                     </label>
-                    <input type="password" placeholder="********" className="input input-bordered w-full max-w-sm" required />
+                    <input type="password" placeholder="********" className="input input-bordered w-full max-w-sm"/>
                 </div>
                 
                 <button className="btn btn-primary">Login</button>
