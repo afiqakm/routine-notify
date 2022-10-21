@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="navbar bg-base-100">
             <div className="navbar-start flex">
                 <img className='w-12' src={logo} alt='routify logo' />
-                <a className="btn btn-ghost hidden normal-case text-xl lg:flex">Routify</a>
+                <a className="btn no-animation btn-ghost hidden normal-case text-xl lg:flex" href="/Dashboard">Routify</a>
             </div>
             <div className='navbar-center'>
                 <label htmlFor="my-modal-6" className="btn btn-primary modal-button">Add Routine</label>
