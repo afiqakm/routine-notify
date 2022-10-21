@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../images/routify.png'
+import { Link } from 'react-router-dom'
 
 export default function Signup() {
   return (
@@ -37,8 +38,8 @@ export default function Signup() {
                     <input type="password" placeholder="********" className="input input-bordered w-full max-w-sm"/>
                 </div>
                 
-                <button className="btn btn-primary">Sign up</button>
-                <p>Already have an account? <a className="link link-secondary" href="/Login">Login here!</a></p>
+                <Link to="/dashboard" className="btn btn-primary">Sign up</Link>
+                <p>Already have an account? <Link to="/login" className="link link-secondary" >Login here!</Link></p>
             </form>
             
         </div>

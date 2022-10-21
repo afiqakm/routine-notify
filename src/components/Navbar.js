@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import logo from '../images/routify.png'
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
                     <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         <li><a>Profile</a></li>
                         <li><a>Settings</a></li>
-                        <li><a href="/">Logout</a></li>
+                        <li><Link to="/">Logout</Link></li>
                     </ul>
                 </div>
             </div>

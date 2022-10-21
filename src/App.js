@@ -9,10 +9,10 @@ function App() {
   return (
     <BrowserRouter basename={'/routify'}>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/" element={<LandingPage />} exact/>
+        <Route path="/Login" element={<Login />} exact/>
+        <Route path="/Signup" element={<Signup />} exact/>
+        <Route path="/Dashboard" element={<Dashboard />} exact/>
       </Routes>
     </BrowserRouter>
   );
