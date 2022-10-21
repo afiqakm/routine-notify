@@ -7,7 +7,7 @@ import LandingPage from './components/LandingPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/routify'}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/Login" element={<Login />} />
